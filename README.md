@@ -58,8 +58,10 @@ Code for *Probe with Participation Trophies*: random-reward RL as a probe of wha
 <tr>
 <td width="50%" valign="top">
 
-### [kvzip](https://github.com/mynotwo/kvzip)
-Lossless compression of LLM KV cache and activations with a byte-plane layout and general-purpose codecs.
+### [KVBytePack](https://github.com/mynotwo/kvbytepack)
+Byte-exact compression of KV cache and activation tensors through byte-plane layouts and general-purpose codecs. Formerly kvzip.
+
+[Public results](https://github.com/mynotwo/kvbytepack/tree/main/results) · [CPU reproduction](https://github.com/mynotwo/kvbytepack/blob/main/docs/reproduce.md)
 
 `Python` `KV cache`
 
