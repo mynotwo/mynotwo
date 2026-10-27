@@ -65,3 +65,7 @@ Full list on my [homepage](https://mynotwo.github.io/publications/) and [Google 
 <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go">
 <img src="https://img.shields.io/badge/eBPF-FF6600?style=flat-square" alt="eBPF">
 </p>
+
+<p>
+  <img src="https://komarev.com/ghpvc/?username=mynotwo&amp;style=flat&amp;color=lightgrey&amp;label=Profile+views" alt="Approximate profile views, counted from image requests" />
+</p>
