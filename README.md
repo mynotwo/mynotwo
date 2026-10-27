@@ -1,4 +1,6 @@
-# Hi, I'm Audrey
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=26&amp;duration=3500&amp;pause=900&amp;color=224B8D&amp;center=true&amp;vCenter=true&amp;width=640&amp;lines=Hi%2C+I%27m+Audrey+%F0%9F%91%8B%3BCompression+%2B+Inference+Systems%3BModel+Capability+%2B+Agent+Reliability" alt="Hi, I’m Audrey — compression, inference systems and agent reliability" />
+</h1>
 
 I publish as **Yu Mao**. I'm a Research Scientist at **ByteDance** in San Jose,
 and received my Ph.D. in Computer Science from **City University of Hong Kong**.
