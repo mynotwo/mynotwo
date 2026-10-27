@@ -31,8 +31,14 @@ Earlier compression work includes [TRACE](https://github.com/mynotwo/A-Fast-Tran
 [ACM MM 2022](https://github.com/mynotwo/compressor_via_simple_and_scalable_parameterization)
 and [DAC 2023](https://github.com/mynotwo/Faster-and-Stronger-Lossless-Compression-with-Optimized-Autoregressive-Framework).
 
-Outside research, I'm building [Hushword](https://github.com/mynotwo/hushword),
-a macOS menu bar dictation tool combining Apple Speech with local Whisper.
+## Everyday tools
+
+I'm also building [Hushword](https://github.com/mynotwo/hushword): speak in the
+app you're using, then return to writing. It combines local Whisper with Apple
+Speech and offers an optional Agent rewrite after dictation.
+
+[Build and try it on an Apple Silicon Mac](https://github.com/mynotwo/hushword#build-and-install-from-source) ·
+[Where audio and text are processed](https://github.com/mynotwo/hushword#processing-and-privacy)
 
 ## 📝 Selected publications
 
