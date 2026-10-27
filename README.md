@@ -1,81 +1,38 @@
-<div align="center">
+# Hi, I'm Audrey
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3500&pause=900&color=224B8D&center=true&vCenter=true&width=640&lines=Hi%2C+I'm+Yu+(Audrey)+Mao+%F0%9F%91%8B;Inference+systems+%C2%B7+Compression+%C2%B7+Agent+reliability;Same+prompt%2C+same+bits%2C+any+hardware" alt="Hi, I'm Yu (Audrey) Mao" />
+I publish as **Yu Mao**. I'm a Research Scientist at **ByteDance** in San Jose,
+and received my Ph.D. in Computer Science from **City University of Hong Kong**.
 
-Research Scientist at **ByteDance** (San Jose) · Ph.D. in CS, **City University of Hong Kong**
+I work on compression and inference systems, with a particular interest in
+when saving bytes actually helps a system run better. I also study reproducible
+inference, model capability and agent reliability.
 
-<a href="https://mynotwo.github.io/"><img src="https://img.shields.io/badge/Homepage-mynotwo.github.io-224b8d?style=flat-square&logo=githubpages&logoColor=white" alt="Homepage"></a>
-<a href="https://scholar.google.com/citations?user=Iw3bTCAAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google_Scholar-Yu_Mao-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
-<a href="https://www.linkedin.com/in/yu-m-475219138"><img src="https://img.shields.io/badge/LinkedIn-Yu_Mao-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+[Homepage](https://mynotwo.github.io/) ·
+[Publications](https://mynotwo.github.io/publications/) ·
+[Google Scholar](https://scholar.google.com/citations?user=Iw3bTCAAAAAJ&hl=en) ·
+[LinkedIn](https://www.linkedin.com/in/yu-m-475219138)
 
-</div>
+## Research projects
 
----
+| Project | Question | Start with |
+|---|---|---|
+| [KVBytePack](https://github.com/mynotwo/kvbytepack) | When do smaller KV records pay for their codec cost? | [Public records, CPU cost and memory measurements](https://github.com/mynotwo/kvbytepack/blob/main/docs/cpu-decode.md) |
+| [BitExact LLM](https://github.com/mynotwo/bitexact-llm) | What stays identical when inference execution changes? | [Weight-free arithmetic checks and scoped device reports](https://github.com/mynotwo/bitexact-llm/blob/main/docs/REPRODUCING.md) |
+| [AIBrix Hybrid KV Cache](https://github.com/mynotwo/aibrix-hybrid-kvcache) | What state must a hybrid prefix cache preserve? | [CPU storage/trace example](https://github.com/mynotwo/aibrix-hybrid-kvcache/blob/main/python/aibrix_kvcache/tools/CPU_QUICKSTART.md) · [RFC](https://github.com/vllm-project/aibrix/issues/3220) |
+| [Random-Reward RL Probe](https://github.com/mynotwo/rl-random-prob) | What can training reach without correctness feedback? | [Paper result CSVs and GPU-free figure reproduction](https://github.com/mynotwo/rl-random-prob#explore-the-published-results-no-gpu) |
 
-I work on **AI infrastructure and LLM inference**: how inference state is represented, compressed and moved through serving systems, how to make model outputs reproducible down to the bit, and how reliably agents use the capabilities their models have.
+These projects expose their tradeoffs and evidence: byte-preserving codecs,
+explicit inference-identity contracts, independently testable storage behavior,
+and reported training outcomes. The hybrid integration's model equivalence is
+still unresolved; BitExact's current CPU checks do not certify every device.
 
-## 🚀 Featured projects
+Earlier compression work includes [TRACE](https://github.com/mynotwo/A-Fast-Transformer-based-General-Purpose-LosslessCompressor)
+(WWW 2022), with follow-ups at
+[ACM MM 2022](https://github.com/mynotwo/compressor_via_simple_and_scalable_parameterization)
+and [DAC 2023](https://github.com/mynotwo/Faster-and-Stronger-Lossless-Compression-with-Optimized-Autoregressive-Framework).
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### [BitExact LLM](https://github.com/mynotwo/bitexact-llm)
-Bit-reproducible Llama inference in integer arithmetic. The same prompt and seed give the same logits, bit for bit, on H800, H100, x86 CPU and Apple M4 Pro, across batch sizes, with or without KV cache. Runs the original bf16 weights exactly, and ships as a vLLM plugin.
-
-`Python` `Triton` `vLLM` `CUDA`
-
-</td>
-<td width="50%" valign="top">
-
-### [AIBrix Hybrid KV Cache](https://github.com/mynotwo/aibrix-hybrid-kvcache)
-Prefix-cache offloading for hybrid models on AIBrix: variable-length KV records, a bounded MEMORY backend and compression profiling.
-
-[RFC](https://github.com/vllm-project/aibrix/issues/3220) · [Draft PR](https://github.com/vllm-project/aibrix/pull/3221) · [Preview](https://github.com/mynotwo/aibrix-hybrid-kvcache/releases/tag/hybrid-v0.1.1-experimental)
-
-`Go` `KV cache` `LLM serving`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [TRACE](https://github.com/mynotwo/A-Fast-Transformer-based-General-Purpose-LosslessCompressor)
-A fast Transformer-based general-purpose lossless compressor (WWW 2022), with follow-ups at [ACM MM 2022](https://github.com/mynotwo/compressor_via_simple_and_scalable_parameterization) and [DAC 2023](https://github.com/mynotwo/Faster-and-Stronger-Lossless-Compression-with-Optimized-Autoregressive-Framework).
-
-`PyTorch` `Lossless compression`
-
-</td>
-<td width="50%" valign="top">
-
-### [Random-Reward RL Probe](https://github.com/mynotwo/rl-random-prob)
-Code for *Probe with Participation Trophies*: random-reward RL as a probe of what an LLM can already do. [arXiv 2610.01066](https://arxiv.org/abs/2610.01066)
-
-`RLVR` `LLM capability`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [KVBytePack](https://github.com/mynotwo/kvbytepack)
-Byte-exact compression of KV cache and activation tensors through byte-plane layouts and general-purpose codecs. Formerly kvzip.
-
-[Public results](https://github.com/mynotwo/kvbytepack/tree/main/results) · [CPU reproduction](https://github.com/mynotwo/kvbytepack/blob/main/docs/reproduce.md)
-
-`Python` `KV cache`
-
-</td>
-<td width="50%" valign="top">
-
-### [HushWord](https://github.com/mynotwo/hushword)
-Local-first macOS menu-bar dictation.
-
-`Swift` `macOS`
-
-</td>
-</tr>
-</table>
+Outside research, I'm building [Hushword](https://github.com/mynotwo/hushword),
+a macOS menu bar dictation tool combining Apple Speech with local Whisper.
 
 ## 📝 Selected publications
 
