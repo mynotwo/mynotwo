@@ -3,8 +3,9 @@
 </h1>
 
 I publish as **Yu Mao**. I'm a Research Scientist at **ByteDance** working on
-efficient and reliable AI systems, with a focus on compression, LLM inference,
-and reproducibility. I received my Ph.D. in Computer Science from
+AI infrastructure: LLM inference and reproducibility, compression and
+representation, model capability, and agent reliability. I received my Ph.D. in
+Computer Science from
 **City University of Hong Kong** and am based in San Jose.
 
 [Homepage](https://mynotwo.github.io/) ·
@@ -18,13 +19,15 @@ and reproducibility. I received my Ph.D. in Computer Science from
 |---|---|---|---|
 | [KVBytePack](https://github.com/mynotwo/kvbytepack) | Reproducible artifact | When do smaller KV records pay for their codec cost? | [Public records, CPU cost and memory measurements](https://github.com/mynotwo/kvbytepack/blob/main/docs/cpu-decode.md) |
 | [BitExact LLM](https://github.com/mynotwo/bitexact-llm) | Research prototype | What stays identical when inference execution changes? | [Weight-free arithmetic checks and scoped device reports](https://github.com/mynotwo/bitexact-llm/blob/main/docs/REPRODUCING.md) |
-| [AIBrix Hybrid KV Cache](https://github.com/mynotwo/aibrix-hybrid-kvcache) | Experimental | What state must a hybrid prefix cache preserve? | [CPU storage/trace example](https://github.com/mynotwo/aibrix-hybrid-kvcache/blob/main/python/aibrix_kvcache/tools/CPU_QUICKSTART.md) · [RFC](https://github.com/vllm-project/aibrix/issues/3220) |
+| [AIBrix Hybrid KV Cache](https://github.com/mynotwo/aibrix-hybrid-kvcache) | Experimental | What state must a hybrid prefix cache preserve? | [CPU storage/trace example](https://github.com/mynotwo/aibrix-hybrid-kvcache/blob/main/python/aibrix_kvcache/tools/CPU_QUICKSTART.md) · [RFC](https://github.com/vllm-project/aibrix/issues/3220) · [Open draft PR #3221](https://github.com/vllm-project/aibrix/pull/3221) |
 | [Random-Reward RL Probe](https://github.com/mynotwo/rl-random-prob) | Paper artifact | What can training reach without correctness feedback? | [Paper result CSVs and GPU-free figure reproduction](https://github.com/mynotwo/rl-random-prob#explore-the-published-results-no-gpu) |
 
 These projects expose their tradeoffs and evidence: byte-preserving codecs,
 explicit inference-identity contracts, independently testable storage behavior,
-and reported training outcomes. The hybrid integration's model equivalence is
-still unresolved; BitExact's current CPU checks do not certify every device.
+and reported training outcomes. The open draft AIBrix PR proposes only the
+byte-store contract, excludes the hybrid serving connector and codecs, and has
+not been merged. The hybrid integration's model equivalence is still unresolved;
+BitExact's current CPU checks do not certify every device.
 
 Earlier compression work includes [TRACE](https://github.com/mynotwo/A-Fast-Transformer-based-General-Purpose-LosslessCompressor)
 (WWW 2022), with follow-ups at
@@ -46,7 +49,7 @@ Speech and offers an optional Agent rewrite after dictation.
 - [**Probe with Participation Trophies: Random-Reward RL as a Probe of LLM Capability**](https://github.com/mynotwo/rl-random-prob) · Preprint 2026
 - [**WISE: A Framework for Gigapixel Whole-Slide-Image Lossless Compression**](https://mynotwo.github.io/assets/pdfs/wise.pdf) · CVPR 2025
 - [**PMR: Fast Application Response via Parallel Memory Reclaim on Mobile Devices**](https://mynotwo.github.io/assets/pdfs/pmr.pdf) · USENIX ATC 2025
-- [**When Compression Meets Model Compression**](https://mynotwo.github.io/assets/pdfs/compression-meets.pdf) · EMNLP Findings 2024
+- [**When Compression Meets Model Compression: Memory-Efficient Double Compression for Large Language Models**](https://mynotwo.github.io/assets/pdfs/compression-meets.pdf) · EMNLP Findings 2024
 - [**Faster and Stronger Lossless Compression with Optimized Autoregressive Framework**](https://github.com/mynotwo/Faster-and-Stronger-Lossless-Compression-with-Optimized-Autoregressive-Framework) · DAC 2023
 - [**TRACE: A Fast Transformer-based General-purpose Lossless Compressor**](https://github.com/mynotwo/A-Fast-Transformer-based-General-Purpose-LosslessCompressor) · WWW 2022
 
