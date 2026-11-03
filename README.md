@@ -42,11 +42,11 @@ Speech and offers an optional Agent rewrite after dictation.
 
 ## 📝 Selected publications
 
-- **AgentPProf: Semantic Profiler for AI Agents** · AgenticOS @ SOSP 2026 · 🏆 *Best Paper Award*
+- [**AgentPProf: Semantic Profiler for AI Agents**](https://os-for-agent.github.io/papers/AgenticOS_SOSP_2026_paper_27.pdf) · AgenticOS @ SOSP 2026 · 🏆 *Best Paper Award*
 - [**Probe with Participation Trophies: Random-Reward RL as a Probe of LLM Capability**](https://github.com/mynotwo/rl-random-prob) · Preprint 2026
-- **WISE: A Framework for Gigapixel Whole-Slide-Image Lossless Compression** · CVPR 2025
-- **PMR: Fast Application Response via Parallel Memory Reclaim on Mobile Devices** · USENIX ATC 2025
-- **When Compression Meets Model Compression** · EMNLP Findings 2024
+- [**WISE: A Framework for Gigapixel Whole-Slide-Image Lossless Compression**](https://mynotwo.github.io/assets/pdfs/wise.pdf) · CVPR 2025
+- [**PMR: Fast Application Response via Parallel Memory Reclaim on Mobile Devices**](https://mynotwo.github.io/assets/pdfs/pmr.pdf) · USENIX ATC 2025
+- [**When Compression Meets Model Compression**](https://mynotwo.github.io/assets/pdfs/compression-meets.pdf) · EMNLP Findings 2024
 - [**Faster and Stronger Lossless Compression with Optimized Autoregressive Framework**](https://github.com/mynotwo/Faster-and-Stronger-Lossless-Compression-with-Optimized-Autoregressive-Framework) · DAC 2023
 - [**TRACE: A Fast Transformer-based General-purpose Lossless Compressor**](https://github.com/mynotwo/A-Fast-Transformer-based-General-Purpose-LosslessCompressor) · WWW 2022
 
